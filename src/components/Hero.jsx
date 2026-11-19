@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ArrowRight } from 'lucide-react'
 import { brand } from '../data/site'
+import { FitWidthText } from './FitWidthText'
 import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion'
 import { HeroFloatLayer } from './HeroFloatLayer'
 
@@ -26,21 +27,6 @@ function HeroChaosDecor() {
         }}
       />
     </div>
-  )
-}
-
-/** Hard dual-type: one offset layer so letterforms stay sharp on phones. */
-function DualLine({ children, fill, shadow }) {
-  return (
-    <span
-      className={`hero-dual block w-full ${fill}`}
-      style={{
-        WebkitTextStroke: '0',
-        textShadow: `0.07em 0.07em 0 ${shadow}`,
-      }}
-    >
-      {children}
-    </span>
   )
 }
 
@@ -85,16 +71,37 @@ export function Hero() {
           <h1
             id="hero-heading"
             data-hero-copy
-            className="hero-headline w-full max-w-full font-display uppercase tracking-wide"
+            className="hero-headline flex w-full max-w-full flex-col overflow-x-clip font-display uppercase"
           >
-            <DualLine fill="text-cream" shadow="#FF174F">
-              LICK IT
-            </DualLine>
-            <DualLine fill="hero-dual-mid text-acid" shadow="#782BFF">
-              BEFORE YOU
-            </DualLine>
-            <span className="mt-3 inline-block border-4 border-dark bg-acid px-3 py-1.5 text-dark shadow-[0.08em_0.08em_0_#FF174F] sm:mt-2 sm:px-3">
-              SUCK IT.
+            <FitWidthText
+              as="span"
+              minPx={36}
+              maxPx={220}
+              pad={20}
+              shadowBleed={0.14}
+              style={{
+                color: '#FFE8D2',
+                textShadow: '0.07em 0.07em 0 #FF174F, -0.04em 0.04em 0 #D5FF00',
+                marginBlock: '0.05em',
+                letterSpacing: '-0.02em',
+              }}
+            >
+              BORN TO DISOBEY
+            </FitWidthText>
+            <span className="mt-2 block w-full border-4 border-dark bg-acid py-2 shadow-[6px_6px_0_#FF174F]">
+              <FitWidthText
+                as="span"
+                minPx={32}
+                maxPx={200}
+                pad={20}
+                shadowBleed={0.06}
+                style={{
+                  color: '#120e12',
+                  letterSpacing: '-0.02em',
+                }}
+              >
+                MADE TO INDULGE.
+              </FitWidthText>
             </span>
           </h1>
         </div>
