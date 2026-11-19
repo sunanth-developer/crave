@@ -1,0 +1,16 @@
+:root {
+  --crave-riot-red: #ff174f;
+  --crave-acid-green: #d5ff00;
+  --crave-chaos-orange: #ff7200;
+  --crave-rebel-purple: #782bff;
+  --crave-after-dark: #120e12;
+  --crave-sugar-cream: #ffe8d2;
+  --crave-hot-mess: #ff4fd8;
+  --crave-bruise: #2a0a3d;
+  --crave-font-display: 'Bebas Neue', Impact, 'Arial Black', sans-serif;
+  --crave-font-impact: 'Archivo Black', 'Anton', Impact, sans-serif;
+  --crave-font-body: 'Syne', 'Bebas Neue', sans-serif;
+  --crave-radius-sm: 0px;
+  --crave-radius-md: 0px;
+  --crave-radius-lg: 0px;
+}
