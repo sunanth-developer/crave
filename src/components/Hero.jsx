@@ -86,7 +86,7 @@ export function Hero() {
                 letterSpacing: '-0.02em',
               }}
             >
-              BORN TO DISOBEY
+              F*CK ORDINARY
             </FitWidthText>
             <span className="mt-2 block w-full border-4 border-dark bg-acid py-2 shadow-[6px_6px_0_#FF174F]">
               <FitWidthText
@@ -100,7 +100,7 @@ export function Hero() {
                   letterSpacing: '-0.02em',
                 }}
               >
-                MADE TO INDULGE.
+                FEED YOUR CRAVINGS.
               </FitWidthText>
             </span>
           </h1>

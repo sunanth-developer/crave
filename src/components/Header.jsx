@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Menu, X } from 'lucide-react'
 import { Logo } from './Logo'
-import { navLinks } from '../data/site'
+import { brand, navLinks } from '../data/site'
 
 const linkTilt = ['-rotate-1', 'rotate-1', '-rotate-2', 'rotate-2', '-rotate-1']
 
@@ -64,8 +64,7 @@ export function Header() {
             <div
               className="pointer-events-none absolute inset-0 opacity-30"
               style={{
-                backgroundImage:
-                  "url('/brand/patterns/riot_splatter_pattern.svg')",
+                backgroundImage: `url("${brand.pattern}")`,
                 backgroundSize: '420px',
               }}
               aria-hidden="true"

@@ -1,20 +1,22 @@
+import { asset } from '../lib/asset'
+
 export const brand = {
   name: 'CRAVE',
   tagline: 'INDULGENCE, UNFILTERED.',
   territory: 'RIOT CANDY',
-  logoLight: '/brand/logo/CRAVE_Graffiti_Lockup.webp',
-  logoDark: '/brand/logo/CRAVE_Graffiti_Wordmark.webp',
-  logoLockup: '/brand/logo/CRAVE_Graffiti_Lockup.webp',
-  logoWordmark: '/brand/logo/CRAVE_Graffiti_Wordmark.webp',
-  icon: '/brand/logo/CRAVE_App_Icon_Concept.svg',
-  mascotHero: '/brand/mascot/mascot-duo.webp',
-  mascotWaitlist: '/brand/mascot/mascot-female.webp',
-  mascotMale: '/brand/mascot/mascot-male.webp',
-  mascotFemale: '/brand/mascot/mascot-female.webp',
-  mascotDuo: '/brand/mascot/mascot-duo.webp',
-  mascotDuoMobile: '/brand/mascot/mascot-duo-mobile.webp',
-  mascotExpressions: '/brand/mascot/mascot-expressions-duo.webp',
-  pattern: '/brand/patterns/riot_splatter_pattern.svg',
+  logoLight: asset('brand/logo/CRAVE_Graffiti_Lockup.webp'),
+  logoDark: asset('brand/logo/CRAVE_Graffiti_Wordmark.webp'),
+  logoLockup: asset('brand/logo/CRAVE_Graffiti_Lockup.webp'),
+  logoWordmark: asset('brand/logo/CRAVE_Graffiti_Wordmark.webp'),
+  icon: asset('brand/logo/CRAVE_App_Icon_Concept.svg'),
+  mascotHero: asset('brand/mascot/mascot-duo.webp'),
+  mascotWaitlist: asset('brand/mascot/mascot-female.webp'),
+  mascotMale: asset('brand/mascot/mascot-male.webp'),
+  mascotFemale: asset('brand/mascot/mascot-female.webp'),
+  mascotDuo: asset('brand/mascot/mascot-duo.webp'),
+  mascotDuoMobile: asset('brand/mascot/mascot-duo-mobile.webp'),
+  mascotExpressions: asset('brand/mascot/mascot-expressions-duo.webp'),
+  pattern: asset('brand/patterns/riot_splatter_pattern.svg'),
 }
 
 export const navLinks = [
@@ -24,7 +26,6 @@ export const navLinks = [
   { href: '#campaign', label: "Don't blink" },
   { href: '#waitlist', label: 'Save me' },
 ]
-
 
 export const categories = [
   {
@@ -37,7 +38,7 @@ export const categories = [
     cta: 'Show me the pops',
     accent: '#FF174F',
     textOn: '#FFF1E6',
-    image: '/products/lollipops/discover.webp',
+    image: asset('products/lollipops/discover.webp'),
     lines: [
       'Tongue first.',
       'No need to rush, baby.',
@@ -56,7 +57,7 @@ export const categories = [
     cta: 'Get chewy',
     accent: '#D5FF00',
     textOn: '#171116',
-    image: '/products/gummies/discover.webp',
+    image: asset('products/gummies/discover.webp'),
     lines: [
       'Chew on me.',
       "It's getting sticky.",
@@ -75,7 +76,7 @@ export const categories = [
     cta: "Drop it like it's hot",
     accent: '#FF7200',
     textOn: '#171116',
-    image: '/products/hard-candies/discover.webp',
+    image: asset('products/hard-candies/discover.webp'),
     lines: [
       'Take it slow.',
       'Let it melt.',
@@ -94,7 +95,7 @@ export const categories = [
     cta: 'Take me to the dark side',
     accent: '#782BFF',
     textOn: '#FFF1E6',
-    image: '/products/chocolates/discover.webp',
+    image: asset('products/chocolates/discover.webp'),
     lines: [
       'Break me off a piece.',
       'Things are about to get melty.',

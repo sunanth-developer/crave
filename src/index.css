@@ -70,7 +70,8 @@
         transparent 0 42px,
         rgba(213, 255, 0, 0.05) 42px 44px
       );
-    background-attachment: fixed;
+    /* fixed attachment causes sticky-scroll jitter on mobile */
+    background-attachment: scroll;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     scrollbar-width: none;
@@ -340,7 +341,7 @@
   }
 
   .star-wash {
-    background-image: url('/brand/patterns/riot_splatter_pattern.svg');
+    background-image: var(--crave-pattern);
     background-size: 380px;
     background-repeat: repeat;
   }

@@ -47,7 +47,7 @@ export function HeatCheck() {
       <div
         className="pointer-events-none absolute inset-0 opacity-20"
         style={{
-          backgroundImage: "url('/brand/patterns/riot_splatter_pattern.svg')",
+          backgroundImage: 'var(--crave-pattern)',
           backgroundSize: '380px',
         }}
         aria-hidden="true"
