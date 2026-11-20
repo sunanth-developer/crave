@@ -1,0 +1,18 @@
+/* CRAVE brand tokens — working creative system */
+:root {
+  --crave-pink: #FF006E;
+  --crave-purple: #9700FF;
+  --crave-acid: #D6FF00;
+  --crave-orange: #FF7800;
+  --crave-cyan: #00DDEB;
+  --crave-blue: #3882FF;
+  --crave-offwhite: #F8FAFC;
+  --crave-black: #08080B;
+  --crave-charcoal: #171116;
+
+  --crave-font-display: "Bebas Neue", "Anton", Impact, sans-serif;
+  --crave-font-body: "Inter", "Manrope", Arial, sans-serif;
+
+  --crave-shadow-pink: 5px 5px 0 var(--crave-pink);
+  --crave-shadow-purple: 5px 5px 0 var(--crave-purple);
+}

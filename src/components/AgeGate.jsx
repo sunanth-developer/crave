@@ -78,13 +78,23 @@ export function AgeGate({ children }) {
           aria-describedby={descId}
         >
           <div className="relative w-full max-w-xl border-4 border-dark bg-cream p-6 text-dark shadow-[12px_12px_0_#171116] sm:p-10">
-            <img
-              src={brand.logoLockup || brand.logoLight}
-              alt="CRAVE"
-              width={280}
-              height={158}
-              className="h-16 w-auto border-4 border-dark shadow-[6px_6px_0_#FF174F] sm:h-20"
-            />
+            <div className="flex items-center gap-3">
+              <img
+                src={brand.logoLight || brand.logoLockup}
+                alt="CRAVE"
+                width={240}
+                height={72}
+                className="h-12 w-auto border-4 border-dark bg-dark object-contain shadow-[6px_6px_0_#FF006E] sm:h-14"
+              />
+              <img
+                src={brand.mascotDuoBanner}
+                alt=""
+                width={160}
+                height={90}
+                className="hidden h-14 w-auto border-4 border-dark object-cover shadow-[6px_6px_0_#D6FF00] sm:block"
+                aria-hidden="true"
+              />
+            </div>
 
             {status === 'pending' ? (
               <>

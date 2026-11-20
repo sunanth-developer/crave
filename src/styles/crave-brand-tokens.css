@@ -1,16 +1,35 @@
+/* CRAVE brand tokens — pack system merged with existing Tailwind aliases */
 :root {
-  --crave-riot-red: #ff174f;
-  --crave-acid-green: #d5ff00;
-  --crave-chaos-orange: #ff7200;
-  --crave-rebel-purple: #782bff;
-  --crave-after-dark: #120e12;
-  --crave-sugar-cream: #ffe8d2;
+  /* Pack website palette */
+  --crave-pink: #ff006e;
+  --crave-purple: #9700ff;
+  --crave-acid: #d6ff00;
+  --crave-orange: #ff7b00;
+  --crave-cyan: #00ddeb;
+  --crave-blue: #3882ff;
+  --crave-offwhite: #f8fafc;
+  --crave-black: #0a0a0f;
+  --crave-charcoal: #171116;
+
+  /* Legacy aliases used across components / Tailwind theme */
+  --crave-riot-red: var(--crave-pink);
+  --crave-acid-green: var(--crave-acid);
+  --crave-chaos-orange: var(--crave-orange);
+  --crave-rebel-purple: var(--crave-purple);
+  --crave-after-dark: var(--crave-black);
+  --crave-sugar-cream: var(--crave-offwhite);
   --crave-hot-mess: #ff4fd8;
-  --crave-bruise: #2a0a3d;
-  --crave-font-display: 'Bebas Neue', Impact, 'Arial Black', sans-serif;
+  --crave-bruise: #1a0a28;
+
+  --crave-font-display: 'Bebas Neue', 'Anton', Impact, 'Arial Black', sans-serif;
   --crave-font-impact: 'Archivo Black', 'Anton', Impact, sans-serif;
-  --crave-font-body: 'Syne', 'Bebas Neue', sans-serif;
+  --crave-font-body: 'Inter', 'Manrope', system-ui, sans-serif;
+
   --crave-radius-sm: 0px;
   --crave-radius-md: 0px;
   --crave-radius-lg: 0px;
+
+  --crave-shadow-pink: 5px 5px 0 var(--crave-pink);
+  --crave-shadow-purple: 5px 5px 0 var(--crave-purple);
+  --crave-shadow-acid: 5px 5px 0 var(--crave-acid);
 }

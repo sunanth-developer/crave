@@ -10,28 +10,6 @@ function AttitudeDecor() {
       <div className="absolute inset-y-0 right-0 w-[30%] bg-acid" />
       <div className="absolute left-[28%] top-0 h-[42%] w-[48%] -skew-x-6 bg-rebel" />
       <div className="absolute bottom-0 left-[22%] h-[36%] w-[56%] skew-x-3 bg-chaos" />
-
-      <div
-        className="absolute inset-x-0 top-[18%] h-16"
-        style={{
-          background:
-            'repeating-linear-gradient(90deg, #120e12 0 24px, #D5FF00 24px 48px, #FF174F 48px 72px)',
-          transform: 'rotate(-3deg) scaleX(1.1)',
-        }}
-      />
-      <div
-        className="absolute inset-x-0 bottom-[22%] h-12"
-        style={{
-          background:
-            'repeating-linear-gradient(90deg, #FF4FD8 0 28px, #120e12 28px 56px, #D5FF00 56px 84px)',
-          transform: 'rotate(2deg) scaleX(1.1)',
-        }}
-      />
-
-      <div className="absolute left-[8%] top-[12%] h-28 w-28 rotate-12 border-8 border-dark bg-cream" />
-      <div className="absolute right-[8%] bottom-[14%] h-24 w-40 -rotate-6 border-8 border-dark bg-mess" />
-      <div className="absolute right-[36%] top-[8%] h-16 w-16 rotate-45 bg-dark" />
-
       <div className="absolute right-[6%] top-[14%] sticker rotate-[10deg] bg-acid text-dark">
         Trouble
       </div>
@@ -57,16 +35,13 @@ export function Attitude() {
 
       <div className="relative z-10">
         <div className="section-pad pt-10">
-          <div
-            data-reveal
-            className="container-crave grid gap-3 sm:grid-cols-2"
-          >
-            <figure className="overflow-hidden border-4 border-dark bg-cream shadow-[8px_8px_0_#FF174F]">
+          <div data-reveal className="container-crave grid gap-3 sm:grid-cols-2">
+            <figure className="overflow-hidden border-4 border-dark bg-[#E5D9C3] shadow-[8px_8px_0_#FF006E]">
               <img
                 src={brand.mascotMale}
                 alt="CRAVE male mascot - cool sunglasses troublemaker"
-                width={864}
-                height={1152}
+                width={768}
+                height={1024}
                 loading="lazy"
                 className="aspect-[3/4] w-full object-cover object-top"
               />
@@ -74,12 +49,12 @@ export function Attitude() {
                 Him. Bad influence.
               </figcaption>
             </figure>
-            <figure className="overflow-hidden border-4 border-dark bg-cream shadow-[8px_8px_0_#D5FF00]">
+            <figure className="overflow-hidden border-4 border-dark bg-[#E5D9C3] shadow-[8px_8px_0_#D6FF00]">
               <img
                 src={brand.mascotFemale}
-                alt="CRAVE female mascot - glamorous candy troublemaker"
-                width={864}
-                height={1152}
+                alt="CRAVE female mascot - lollipop troublemaker"
+                width={768}
+                height={1024}
                 loading="lazy"
                 className="aspect-[3/4] w-full object-cover object-top"
               />
@@ -91,14 +66,14 @@ export function Attitude() {
         </div>
 
         <div data-reveal className="mt-8 w-full px-2 sm:px-4">
-          <figure className="mx-auto w-full max-w-[1400px] overflow-hidden border-4 border-dark">
+          <figure className="mx-auto w-full max-w-[1400px] overflow-hidden border-4 border-dark shadow-[8px_8px_0_#9700FF]">
             <img
-              src={brand.mascotExpressions}
-              alt="CRAVE mascot moods - The Tease, The Rebel, The Chill, The Wink"
-              width={1280}
-              height={720}
+              src={brand.mascotDuoFaces}
+              alt="CRAVE pop-art duo - campaign frame"
+              width={1600}
+              height={900}
               loading="lazy"
-              className="mx-auto w-full object-cover"
+              className="mx-auto aspect-[16/9] w-full object-cover object-center"
             />
           </figure>
         </div>
@@ -113,7 +88,7 @@ export function Attitude() {
               data-reveal
               className="mt-4 display-xl max-w-[12ch] text-balance"
               style={{
-                textShadow: '0.07em 0.07em 0 #FF174F, -0.04em 0.04em 0 #D5FF00',
+                textShadow: '0.07em 0.07em 0 #FF006E, -0.04em 0.04em 0 #D6FF00',
               }}
             >
               What&apos;s your kind of{' '}
@@ -129,9 +104,9 @@ export function Attitude() {
                   style={{
                     background: item.accent,
                     color:
-                      item.accent === '#D5FF00' || item.accent === '#FF7200'
-                        ? '#171116'
-                        : '#FFF1E6',
+                      item.accent === '#D6FF00' || item.accent === '#FF7B00'
+                        ? '#0A0A0F'
+                        : '#F8FAFC',
                     transform: i % 2 === 0 ? 'rotate(-1deg)' : 'rotate(1deg)',
                   }}
                 >
@@ -143,6 +118,20 @@ export function Attitude() {
                   </p>
                 </article>
               ))}
+            </div>
+
+            <div
+              data-reveal
+              className="mt-12 overflow-hidden border-4 border-dark"
+            >
+              <img
+                src={brand.mascotMoods}
+                alt="CRAVE duo moods on grunge canvas"
+                width={1600}
+                height={900}
+                loading="lazy"
+                className="aspect-[16/9] w-full object-cover object-center"
+              />
             </div>
 
             <p
@@ -168,9 +157,9 @@ export function Attitude() {
                     maxPx={260}
                     pad={24}
                     style={{
-                      color: '#FFE8D2',
+                      color: '#F8FAFC',
                       textShadow:
-                        '0.07em 0.07em 0 #120e12, -0.045em 0.04em 0 #D5FF00',
+                        '0.07em 0.07em 0 #0A0A0F, -0.045em 0.04em 0 #D6FF00',
                       marginBlock: '0.05em',
                     }}
                   >
@@ -183,14 +172,7 @@ export function Attitude() {
                 style={{ fontSize: 'clamp(1.35rem, 4vw, 2.4rem)' }}
               >
                 Meet the faces of CRAVE. A little attitude. A little mischief.
-                Absolutely no interest in behaving. They&apos;re not here to fit
-                in. They&apos;re here to steal the spotlight.
-              </p>
-              <p
-                className="mt-10 text-center font-impact uppercase tracking-wide text-acid"
-                style={{ fontSize: 'clamp(1.4rem, 3.5vw, 2.6rem)' }}
-              >
-                Don&apos;t stare. They know.
+                Absolutely no interest in behaving.
               </p>
             </div>
           </div>

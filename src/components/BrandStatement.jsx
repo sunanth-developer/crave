@@ -3,28 +3,28 @@ import { FitWidthText } from './FitWidthText'
 
 const tones = [
   {
-    bg: '#171116',
-    color: '#FFE8D2',
-    shadowA: '#FF174F',
-    shadowB: '#D5FF00',
+    bg: '#0A0A0F',
+    color: '#F8FAFC',
+    shadowA: '#FF006E',
+    shadowB: '#D6FF00',
   },
   {
-    bg: '#FF174F',
-    color: '#FFE8D2',
-    shadowA: '#120e12',
-    shadowB: '#D5FF00',
+    bg: '#FF006E',
+    color: '#F8FAFC',
+    shadowA: '#0A0A0F',
+    shadowB: '#D6FF00',
   },
   {
-    bg: '#D5FF00',
-    color: '#120e12',
-    shadowA: '#FF174F',
-    shadowB: '#FFE8D2',
+    bg: '#D6FF00',
+    color: '#0A0A0F',
+    shadowA: '#FF006E',
+    shadowB: '#F8FAFC',
   },
   {
-    bg: '#782BFF',
-    color: '#FFE8D2',
-    shadowA: '#D5FF00',
-    shadowB: '#120e12',
+    bg: '#9700FF',
+    color: '#F8FAFC',
+    shadowA: '#D6FF00',
+    shadowB: '#0A0A0F',
   },
 ]
 

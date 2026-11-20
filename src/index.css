@@ -10,6 +10,8 @@
   --color-cream: var(--crave-sugar-cream);
   --color-mess: var(--crave-hot-mess);
   --color-bruise: var(--crave-bruise);
+  --color-cyan: var(--crave-cyan);
+  --color-blue: var(--crave-blue);
   --font-display: var(--crave-font-display);
   --font-impact: var(--crave-font-impact);
   --font-body: var(--crave-font-body);
@@ -57,18 +59,18 @@
     color: var(--crave-sugar-cream);
     background-color: var(--crave-after-dark);
     background-image:
-      radial-gradient(ellipse 80% 50% at 10% -10%, rgba(255, 23, 79, 0.55), transparent 55%),
-      radial-gradient(ellipse 60% 40% at 100% 20%, rgba(120, 43, 255, 0.45), transparent 50%),
-      radial-gradient(ellipse 50% 35% at 50% 100%, rgba(213, 255, 0, 0.18), transparent 55%),
+      radial-gradient(ellipse 80% 50% at 10% -10%, rgba(255, 0, 110, 0.45), transparent 55%),
+      radial-gradient(ellipse 60% 40% at 100% 20%, rgba(151, 0, 255, 0.4), transparent 50%),
+      radial-gradient(ellipse 50% 35% at 50% 100%, rgba(214, 255, 0, 0.14), transparent 55%),
       repeating-linear-gradient(
         -18deg,
         transparent 0 26px,
-        rgba(255, 23, 79, 0.07) 26px 28px
+        rgba(255, 0, 110, 0.06) 26px 28px
       ),
       repeating-linear-gradient(
         72deg,
         transparent 0 42px,
-        rgba(213, 255, 0, 0.05) 42px 44px
+        rgba(0, 221, 235, 0.04) 42px 44px
       );
     /* fixed attachment causes sticky-scroll jitter on mobile */
     background-attachment: scroll;
@@ -167,7 +169,7 @@
   .hero-follow-title {
     font-size: clamp(3.2rem, 13vw, 6.5rem);
     line-height: 0.9;
-    text-shadow: 0.07em 0.07em 0 #120e12, -0.04em 0.04em 0 #d5ff00;
+    text-shadow: 0.07em 0.07em 0 #0a0a0f, -0.04em 0.04em 0 #d6ff00;
   }
 
   @media (min-width: 768px) {
@@ -321,10 +323,10 @@
 
   .clash-bg {
     background-image:
-      radial-gradient(circle at 12% 18%, rgba(213, 255, 0, 0.35), transparent 22%),
-      radial-gradient(circle at 88% 22%, rgba(255, 23, 79, 0.4), transparent 24%),
-      radial-gradient(circle at 70% 78%, rgba(120, 43, 255, 0.35), transparent 28%),
-      radial-gradient(circle at 24% 82%, rgba(255, 114, 0, 0.3), transparent 20%),
+      radial-gradient(circle at 12% 18%, rgba(214, 255, 0, 0.35), transparent 22%),
+      radial-gradient(circle at 88% 22%, rgba(255, 0, 110, 0.4), transparent 24%),
+      radial-gradient(circle at 70% 78%, rgba(151, 0, 255, 0.35), transparent 28%),
+      radial-gradient(circle at 24% 82%, rgba(255, 123, 0, 0.3), transparent 20%),
       repeating-linear-gradient(
         -32deg,
         transparent 0 16px,
@@ -335,9 +337,64 @@
   .hazard-bg {
     background-image: repeating-linear-gradient(
       -45deg,
-      #d5ff00 0 18px,
-      #171116 18px 36px
+      #d6ff00 0 18px,
+      #0a0a0f 18px 36px
     );
+  }
+
+  .banner-boring {
+    color: #f8fafc;
+    background-color: #0a0a0f;
+    background-image:
+      linear-gradient(105deg, rgba(255, 0, 110, 0.55) 0 38%, transparent 38%),
+      radial-gradient(ellipse at 80% 40%, rgba(151, 0, 255, 0.35), transparent 50%),
+      repeating-linear-gradient(
+        -24deg,
+        transparent 0 14px,
+        rgba(248, 250, 252, 0.05) 14px 16px
+      );
+  }
+
+  .banner-trouble {
+    color: #0a0a0f;
+    background-color: #d6ff00;
+    background-image:
+      radial-gradient(ellipse at 10% 0%, rgba(255, 0, 110, 0.35), transparent 40%),
+      radial-gradient(ellipse at 90% 100%, rgba(151, 0, 255, 0.25), transparent 45%),
+      repeating-linear-gradient(
+        12deg,
+        transparent 0 22px,
+        rgba(10, 10, 15, 0.12) 22px 26px
+      );
+  }
+
+  .banner-drops {
+    color: #f8fafc;
+    background-color: #0a0a0f;
+    background-image:
+      radial-gradient(circle at 30% 50%, rgba(255, 0, 110, 0.45), transparent 45%),
+      radial-gradient(circle at 70% 60%, rgba(0, 221, 235, 0.2), transparent 40%),
+      repeating-linear-gradient(
+        90deg,
+        transparent 0 16px,
+        rgba(255, 0, 110, 0.18) 16px 18px
+      );
+  }
+
+  .banner-club {
+    color: #f8fafc;
+    background-color: #1a0628;
+    background-image:
+      radial-gradient(ellipse at 50% 100%, rgba(151, 0, 255, 0.55), transparent 55%),
+      radial-gradient(ellipse at 20% 0%, rgba(255, 0, 110, 0.35), transparent 40%),
+      radial-gradient(circle, rgba(214, 255, 0, 0.5) 1px, transparent 1.5px);
+    background-size: auto, auto, 28px 28px;
+  }
+
+  .campaign-drops-bg {
+    background-image:
+      radial-gradient(ellipse at 50% 0%, rgba(255, 0, 110, 0.35), transparent 50%),
+      radial-gradient(ellipse at 100% 100%, rgba(151, 0, 255, 0.25), transparent 45%);
   }
 
   .star-wash {
@@ -397,15 +454,15 @@
   }
 
   .hero-follow-bg {
-    background-color: #ff174f;
+    background-color: #ff006e;
     background-image:
-      radial-gradient(ellipse 120% 80% at 50% -10%, #d5ff00 0%, transparent 45%),
-      radial-gradient(circle at 0% 100%, #782bff 0%, transparent 42%),
-      radial-gradient(circle at 100% 80%, #120e12 0%, transparent 38%),
+      radial-gradient(ellipse 120% 80% at 50% -10%, #d6ff00 0%, transparent 45%),
+      radial-gradient(circle at 0% 100%, #9700ff 0%, transparent 42%),
+      radial-gradient(circle at 100% 80%, #0a0a0f 0%, transparent 38%),
       repeating-radial-gradient(
         circle at 50% 50%,
         transparent 0 22px,
-        rgba(18, 14, 18, 0.18) 22px 24px
+        rgba(10, 10, 15, 0.18) 22px 24px
       );
   }
 

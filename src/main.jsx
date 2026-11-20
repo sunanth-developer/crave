@@ -6,7 +6,7 @@ import { asset } from './lib/asset'
 
 document.documentElement.style.setProperty(
   '--crave-pattern',
-  `url("${asset('brand/patterns/riot_splatter_pattern.svg')}")`,
+  `url("${asset('brand/pack/graphics/riot-dot-pattern.svg')}")`,
 )
 
 createRoot(document.getElementById('root')).render(

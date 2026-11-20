@@ -1,5 +1,5 @@
 import { Logo } from './Logo'
-import { brand, navLinks } from '../data/site'
+import { navLinks } from '../data/site'
 
 const COPYRIGHT_YEAR = 2026
 
@@ -10,7 +10,7 @@ export function Footer() {
       aria-labelledby="footer-heading"
     >
       <div className="border-y-4 border-dark py-5 hazard-bg">
-        <p className="mx-auto w-fit -rotate-1 border-4 border-dark bg-cream px-4 py-2 text-center font-impact text-xl uppercase tracking-wide text-dark shadow-[6px_6px_0_#FF174F] sm:px-6 sm:py-3 sm:text-4xl">
+        <p className="mx-auto w-fit -rotate-1 border-4 border-dark bg-cream px-4 py-2 text-center font-impact text-xl uppercase tracking-wide text-dark shadow-[6px_6px_0_#FF006E] sm:px-6 sm:py-3 sm:text-4xl">
           Stay naughty. Stay sweet.
         </p>
       </div>

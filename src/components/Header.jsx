@@ -74,14 +74,14 @@ export function Header() {
               <div className="container-crave flex h-16 items-center justify-between">
                 <a
                   href="#top"
-                  className="inline-flex border-4 border-dark bg-dark shadow-[4px_4px_0_#D5FF00]"
+                  className="inline-flex border-4 border-dark bg-dark shadow-[4px_4px_0_#D6FF00]"
                   onClick={(e) => {
                     e.preventDefault()
                     close()
                     document.getElementById('top')?.scrollIntoView()
                   }}
                 >
-                  <Logo className="h-10 w-auto" />
+                  <Logo className="h-9 w-auto max-w-[160px]" />
                 </a>
                 <button
                   type="button"
@@ -103,7 +103,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={close}
-                  className={`w-fit border-4 border-dark bg-cream px-4 py-3 font-display text-4xl tracking-wide text-dark shadow-[6px_6px_0_#FF174F] transition hover:bg-acid ${linkTilt[i % linkTilt.length]}`}
+                  className={`w-fit border-4 border-dark bg-cream px-4 py-3 font-display text-4xl tracking-wide text-dark shadow-[6px_6px_0_#FF006E] transition hover:bg-acid ${linkTilt[i % linkTilt.length]}`}
                 >
                   {link.label}
                 </a>
@@ -113,7 +113,7 @@ export function Header() {
                 onClick={close}
                 className="cta-acid mt-6 w-fit"
               >
-                Oh, hell yes
+                Join the waitlist
               </a>
             </nav>
           </div>,
@@ -136,12 +136,12 @@ export function Header() {
           <div className="container-crave flex h-16 items-center justify-between gap-3 md:h-20">
             <a
               href="#top"
-              className={`inline-flex border-4 border-dark bg-dark shadow-[4px_4px_0_#D5FF00] transition hover:-translate-y-0.5 hover:shadow-[6px_6px_0_#FF174F] ${
+              className={`inline-flex border-4 border-dark bg-dark shadow-[4px_4px_0_#D6FF00] transition hover:-translate-y-0.5 hover:shadow-[6px_6px_0_#FF006E] ${
                 open ? 'invisible' : ''
               }`}
               onClick={close}
             >
-              <Logo className="h-9 w-auto md:h-11" />
+              <Logo className="h-8 w-auto max-w-[140px] md:h-10 md:max-w-[180px]" />
             </a>
 
             <nav
@@ -152,7 +152,7 @@ export function Header() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className={`border-4 border-dark bg-cream px-2.5 py-1.5 font-impact text-[0.7rem] uppercase tracking-wide text-dark shadow-[3px_3px_0_#171116] transition hover:-translate-y-0.5 hover:bg-acid hover:shadow-[5px_5px_0_#FF174F] xl:px-3 xl:text-xs ${linkTilt[i % linkTilt.length]} ${
+                  className={`border-4 border-dark bg-cream px-2.5 py-1.5 font-impact text-[0.7rem] uppercase tracking-wide text-dark shadow-[3px_3px_0_#0A0A0F] transition hover:-translate-y-0.5 hover:bg-acid hover:shadow-[5px_5px_0_#FF006E] xl:px-3 xl:text-xs ${linkTilt[i % linkTilt.length]} ${
                     scrolled ? 'opacity-100' : 'opacity-95'
                   }`}
                 >
@@ -164,14 +164,14 @@ export function Header() {
             <div className="flex items-center gap-2">
               <a
                 href="#waitlist"
-                className="hidden min-h-10 items-center border-4 border-dark bg-acid px-3 font-impact text-[0.65rem] uppercase tracking-wide text-dark shadow-[3px_3px_0_#FF174F] transition hover:-translate-y-0.5 hover:bg-cream sm:inline-flex md:min-h-11 md:px-4 md:text-xs md:shadow-[4px_4px_0_#FF174F]"
+                className="hidden min-h-10 items-center border-4 border-dark bg-riot px-3 font-impact text-[0.65rem] uppercase tracking-wide text-cream shadow-[3px_3px_0_#D6FF00] transition hover:-translate-y-0.5 hover:bg-acid hover:text-dark sm:inline-flex md:min-h-11 md:px-4 md:text-xs md:shadow-[4px_4px_0_#D6FF00]"
               >
-                Oh, hell yes
+                Explore / Join
               </a>
 
               <button
                 type="button"
-                className={`pointer-events-auto inline-flex h-11 w-11 items-center justify-center border-4 border-dark bg-acid text-dark shadow-[3px_3px_0_#FF174F] lg:hidden ${
+                className={`pointer-events-auto inline-flex h-11 w-11 items-center justify-center border-4 border-dark bg-acid text-dark shadow-[3px_3px_0_#FF006E] lg:hidden ${
                   open ? 'invisible' : ''
                 }`}
                 aria-expanded={open}

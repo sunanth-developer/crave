@@ -57,12 +57,12 @@ function DiscoverStatic() {
       aria-labelledby="discover-heading"
     >
       <div className="border-b-4 border-dark bg-acid px-5 py-8 text-dark clash-bg">
-        <p className="eyebrow">The goods</p>
+        <p className="eyebrow">Pick your kind of trouble</p>
         <h2
           id="discover-heading"
           className="mt-3 font-display text-4xl tracking-wide sm:text-5xl"
         >
-          Pick your desire, sugar.
+          Pick your kind of trouble.
         </h2>
         <p className="mt-2 max-w-sm text-sm font-bold sm:text-base">
           Keep scrolling. Taste buds first. Questions later.
@@ -74,11 +74,11 @@ function DiscoverStatic() {
           className="grid min-h-[100svh] border-b-4 border-dark md:grid-cols-2"
           style={{ background: cat.accent, color: cat.textOn }}
         >
-          <div className="flex min-h-[42svh] items-center justify-center overflow-hidden border-b-4 border-dark bg-cream p-5 md:min-h-0 md:border-b-0 md:border-r-4">
+          <div className="flex min-h-[42svh] items-center justify-center overflow-hidden border-b-4 border-dark bg-dark p-0 md:min-h-0 md:border-b-0 md:border-r-4">
             <img
-              src={cat.image}
+              src={cat.pack || cat.image}
               alt={`${cat.name} packaging concept`}
-              className="max-h-[48vh] w-auto max-w-[78%] object-contain md:max-h-[72vh] md:max-w-[82%]"
+              className="h-full max-h-[52vh] w-full object-cover object-center md:max-h-none md:min-h-full"
               loading="lazy"
             />
           </div>
@@ -141,13 +141,13 @@ export function ProductDiscover() {
           className="grid h-full w-full grid-rows-[minmax(0,1fr)_minmax(0,1.05fr)] transition-[background,color] duration-300 md:grid-cols-[1fr_1fr] md:grid-rows-none"
           style={{ background: active.accent, color: active.textOn }}
         >
-          <div className="relative flex min-h-0 items-center justify-center overflow-hidden border-b-4 border-dark bg-cream p-4 md:border-b-0 md:border-r-4 md:p-6 lg:p-8">
+          <div className="relative flex min-h-0 items-center justify-center overflow-hidden border-b-4 border-dark bg-dark md:border-b-0 md:border-r-4">
             {categories.map((cat, i) => (
               <img
                 key={cat.id}
-                src={cat.image}
+                src={cat.pack || cat.image}
                 alt={i === activeIndex ? `${cat.name} packaging concept` : ''}
-                className={`absolute max-h-[38vh] w-auto max-w-[70%] object-contain transition-opacity duration-300 md:max-h-[78vh] md:max-w-[85%] ${
+                className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-300 ${
                   i === activeIndex ? 'opacity-100' : 'opacity-0'
                 }`}
                 aria-hidden={i !== activeIndex}
@@ -161,7 +161,7 @@ export function ProductDiscover() {
                 id="discover-heading"
                 className="font-display text-2xl tracking-wide sm:text-3xl md:text-4xl"
               >
-                Pick your desire, sugar.
+                Pick your kind of trouble.
               </h2>
               <p className="mt-1 text-xs font-bold opacity-80 sm:text-sm">
                 Keep scrolling. Taste buds first. Questions later.

@@ -201,9 +201,9 @@ export function Waitlist() {
                 </div>
                 <img
                   src={brand.mascotWaitlist}
-                  alt="CRAVE female mascot inviting you onto the waitlist"
-                  width={864}
-                  height={1152}
+                  alt="CRAVE pop-art mascot inviting you onto the waitlist"
+                  width={768}
+                  height={1024}
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover object-top"
                 />

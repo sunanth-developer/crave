@@ -4,44 +4,44 @@ import { FitWidthText, FluidBlock } from './FitWidthText'
 const lines = [
   {
     text: 'TAG YOUR PARTNER IN CRIME.',
-    bg: '#782BFF',
-    color: '#FFF1E6',
-    accent: '#D5FF00',
+    bg: '#9700FF',
+    color: '#F8FAFC',
+    accent: '#D6FF00',
   },
   {
     text: 'SLIDE INTO OUR DMS.',
-    bg: '#FF174F',
-    color: '#FFF1E6',
-    accent: '#120e12',
+    bg: '#FF006E',
+    color: '#F8FAFC',
+    accent: '#0A0A0F',
   },
   {
-    text: 'SPILL THE SWEET TEA.',
-    bg: '#D5FF00',
-    color: '#120e12',
-    accent: '#FF174F',
+    text: 'JOIN THE CRAVE CLUB.',
+    bg: '#D6FF00',
+    color: '#0A0A0F',
+    accent: '#FF006E',
   },
   {
     text: 'WE LOVE A LITTLE ATTENTION.',
-    bg: '#FF7200',
-    color: '#120e12',
-    accent: '#782BFF',
+    bg: '#FF7B00',
+    color: '#0A0A0F',
+    accent: '#9700FF',
   },
   {
     text: 'FOLLOW THE BAD INFLUENCE.',
-    bg: '#120e12',
-    color: '#D5FF00',
-    accent: '#FF174F',
+    bg: '#0A0A0F',
+    color: '#D6FF00',
+    accent: '#FF006E',
   },
 ]
 
 const slides = [
   {
     kind: 'title',
-    eyebrow: 'You look like our kind of people.',
-    textLines: ['COME BE A LITTLE', 'PROBLEM WITH US.'],
-    bg: '#782BFF',
-    color: '#FFF1E6',
-    accent: '#D5FF00',
+    eyebrow: 'The Crave Club',
+    textLines: ['TROUBLE LOVES', 'COMPANY.'],
+    bg: '#9700FF',
+    color: '#F8FAFC',
+    accent: '#D6FF00',
   },
   ...lines.map((line) => ({ kind: 'line', ...line })),
 ]
@@ -61,7 +61,7 @@ function SlideCopy({ slide }) {
           minRem={1.1}
           preferVw={4.2}
           maxRem={2}
-          style={{ color: '#D5FF00', textShadow: '0.06em 0.06em 0 #120e12' }}
+          style={{ color: '#D6FF00', textShadow: '0.06em 0.06em 0 #0A0A0F' }}
         >
           {slide.eyebrow}
         </FluidBlock>
@@ -110,12 +110,12 @@ export function Social() {
   if (reduced) {
     return (
       <section
-        id="social"
+        id="community"
         className="relative overflow-x-clip"
         aria-labelledby="social-heading"
       >
         <h2 id="social-heading" className="sr-only">
-          Come be a little problem with us.
+          The Crave Club — trouble loves company.
         </h2>
         {slides.map((slide) => (
           <div
@@ -132,7 +132,7 @@ export function Social() {
 
   return (
     <section
-      id="social"
+      id="community"
       ref={sectionRef}
       className="relative z-20"
       style={runwayStyle}
@@ -158,7 +158,7 @@ export function Social() {
         />
 
         <h2 id="social-heading" className="sr-only">
-          Come be a little problem with us.
+          The Crave Club — trouble loves company.
         </h2>
 
         {slides.map((slide, i) => (

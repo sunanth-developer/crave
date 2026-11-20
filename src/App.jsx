@@ -16,6 +16,10 @@ import { Waitlist } from './components/Waitlist'
 import { Footer } from './components/Footer'
 import { PlayfulCursor } from './components/PlayfulCursor'
 import { RiotAtmosphere } from './components/RiotAtmosphere'
+import { RiotBanner } from './components/RiotBanner'
+import { ValueStrip } from './components/ValueStrip'
+import { MascotGallery } from './components/MascotGallery'
+import { PackagingLineup } from './components/PackagingLineup'
 import { marqueeAcid, marqueeChaos, marqueeRiot } from './data/site'
 
 export default function App() {
@@ -34,21 +38,28 @@ export default function App() {
         <Hero />
         <MarqueeStrip items={marqueeRiot} speed="fast" />
         <MarqueeStrip tone="acid" items={marqueeAcid} reverse speed="fast" />
+        <RiotBanner variant="boring" />
         <BrandIntro />
         <Temptation />
         <MarqueeStrip tone="rebel" items={marqueeChaos} speed="fast" />
         <MarqueeStrip tone="chaos" items={marqueeRiot} reverse speed="fast" />
+        <RiotBanner variant="trouble" />
         <ProductUniverse />
+        <PackagingLineup />
         <ProductDiscover />
         <FlavourPlayground />
         <Ritual />
         <Attitude />
+        <MascotGallery />
+        <RiotBanner variant="drops" />
         <Campaign />
         <MarqueeStrip tone="acid" items={marqueeAcid} reverse />
         <MarqueeStrip items={marqueeChaos} speed="fast" />
+        <RiotBanner variant="club" />
         <Social />
         <BrandStatement />
         <Waitlist />
+        <ValueStrip />
         <Footer />
       </main>
     </AgeGate>
